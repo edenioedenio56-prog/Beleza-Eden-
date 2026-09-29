@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleza Eden — Sua beleza começa aqui</title>
+  <meta name="description" content="Beleza Eden — cosméticos, cuidados de beleza e atendimento pelo WhatsApp.">
+  <style>
+    :root{
+      --bg:#fff8fb; --card:#ffffff; --text:#241820; --muted:#75636b;
+      --accent:#b51f5b; --accent2:#8e1547; --line:#f0dce4;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#fff5f9 0%,#fff 55%);color:var(--text)}
+    .wrap{max-width:720px;margin:auto;padding:18px}
+    header{text-align:center;padding:28px 10px 18px}
+    .logo{width:86px;height:86px;border-radius:50%;margin:auto;display:grid;place-items:center;
+      background:linear-gradient(135deg,#b51f5b,#e68aaa);color:white;font-size:30px;font-weight:800;
+      box-shadow:0 12px 30px #b51f5b33}
+    h1{margin:16px 0 5px;font-size:34px}
+    .tag{color:var(--accent);font-weight:700;font-size:16px}
+    .intro{color:var(--muted);line-height:1.6;margin:12px auto 22px;max-width:540px}
+    .buttons{display:grid;gap:12px}
+    .btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;
+      padding:16px;border-radius:16px;font-weight:700;color:white;background:var(--accent);
+      box-shadow:0 8px 18px #b51f5b22;transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:var(--accent2)}
+    .btn.alt{background:#fff;color:var(--accent);border:1px solid var(--line);box-shadow:none}
+    section{margin-top:30px}
+    .title{text-align:center;font-size:22px;margin-bottom:14px}
+    .products{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .product{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center}
+    .icon{font-size:34px;margin-bottom:8px}
+    .product h3{margin:5px 0;font-size:16px}
+    .product p{margin:0;color:var(--muted);font-size:13px;line-height:1.4}
+    .info{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
+    .info p{margin:10px 0;color:var(--muted);line-height:1.5}
+    footer{text-align:center;color:var(--muted);font-size:13px;padding:28px 5px 12px}
+    @media(max-width:420px){h1{font-size:29px}.products{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">BE</div>
+      <h1>Beleza Eden</h1>
+      <div class="tag">Sua beleza começa aqui.</div>
+      <p class="intro">
+        Produtos de beleza e cuidados pessoais para realçar a sua beleza.
+        Fale conosco pelo WhatsApp e peça o nosso catálogo.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="https://wa.me/244935492155?text=Olá%20Beleza%20Eden!%20Quero%20ver%20o%20catálogo%20de%20produtos." target="_blank">💬 Pedir pelo WhatsApp</a>
+        <a class="btn alt" href="#catalogo">🛍️ Ver catálogo</a>
+        <a class="btn alt" href="#localizacao">📍 Ver localização</a>
+      </div>
+    </header>
+
+    <section id="catalogo">
+      <h2 class="title">🛍️ O que você encontra</h2>
+      <div class="products">
+        <div class="product"><div class="icon">🧴</div><h3>Cremes</h3><p>Cuidados para a pele e beleza.</p></div>
+        <div class="product"><div class="icon">💄</div><h3>Batons</h3><p>Produtos para valorizar o seu visual.</p></div>
+        <div class="product"><div class="icon">✨</div><h3>Óleos faciais</h3><p>Cuidados e rotina de beleza.</p></div>
+        <div class="product"><div class="icon">💆</div><h3>Produtos capilares</h3><p>Óleos, géis e cuidados para o cabelo.</p></div>
+        <div class="product"><div class="icon">🌸</div><h3>Cuidados pessoais</h3><p>Produtos selecionados para o seu dia a dia.</p></div>
+        <div class="product"><div class="icon">🛒</div><h3>Novidades</h3><p>Consulte os produtos disponíveis.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">💬 Faça o seu pedido</h2>
+      <div class="info">
+        <p><strong>1.</strong> Clique em “Pedir pelo WhatsApp”.</p>
+        <p><strong>2.</strong> Diga o produto que procura.</p>
+        <p><strong>3.</strong> Receba informações sobre disponibilidade e atendimento.</p>
+      </div>
+    </section>
+
+    <section id="localizacao">
+      <h2 class="title">📍 Onde estamos</h2>
+      <div class="info">
+        <p><strong>Beleza Eden</strong></p>
+        <p>Bairro Catemo, Rua Joaquim Capango.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bairro%20Catemo%20Rua%20Joaquim%20Capango%20Angola" target="_blank">Abrir no Google Maps</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">📲 Siga a Beleza Eden</h2>
+      <div class="buttons">
+        <a class="btn alt" href="https://www.tiktok.com/" target="_blank">🎵 TikTok</a>
+        <a class="btn alt" href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
+      </div>
+    </section>
+
+    <footer>© 2026 Beleza Eden · Sua beleza começa aqui.</footer>
+  </main>
+</body>
+</html>
