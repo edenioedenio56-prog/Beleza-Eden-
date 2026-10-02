@@ -1,1 +1,234 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleza Éden | Sua beleza começa aqui</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #fff7fb 0%, #ffffff 100%);
+      color: #333;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .topo {
+      padding: 45px 20px 30px;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin: auto;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d81b72, #8e1550);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      box-shadow: 0 8px 25px rgba(180, 20, 100, 0.25);
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: 32px;
+      color: #9c1658;
+    }
+
+    .slogan {
+      margin-top: 8px;
+      color: #777;
+      font-size: 16px;
+    }
+
+    .descricao {
+      max-width: 520px;
+      margin: 18px auto 25px;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .botoes {
+      max-width: 520px;
+      margin: auto;
+      padding: 0 20px 30px;
+    }
+
+    .botao {
+      display: block;
+      width: 100%;
+      padding: 17px 20px;
+      margin: 13px 0;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      color: white;
+      background: #9c1658;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+      transition: 0.2s;
+    }
+
+    .botao:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .tiktok {
+      background: #111111;
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+    }
+
+    .catalogo {
+      background: #9c1658;
+    }
+
+    .localizacao {
+      background: #555;
+    }
+
+    .produtos {
+      max-width: 600px;
+      margin: 5px auto 35px;
+      padding: 0 20px;
+    }
+
+    .produtos h2 {
+      color: #9c1658;
+      margin-bottom: 15px;
+    }
+
+    .lista {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .produto {
+      background: white;
+      padding: 15px 8px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      color: #555;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 25px 15px;
+      background: #9c1658;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .lista {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topo">
+
+    <div class="logo">BE</div>
+
+    <h1>Beleza Éden</h1>
+
+    <p class="slogan">
+      Sua beleza começa aqui.
+    </p>
+
+    <p class="descricao">
+      Bem-vindo à Beleza Éden. Encontre produtos de beleza,
+      cuidados para a pele e cabelos e muito mais.
+      Fale conosco pelo WhatsApp e faça o seu pedido.
+    </p>
+
+  </header>
+
+  <section class="botoes">
+
+    <a class="botao whatsapp"
+       href="https://wa.me/244935492155?text=Olá%20Beleza%20Éden!%20Quero%20saber%20mais%20sobre%20os%20produtos."
+       target="_blank">
+      💬 Falar no WhatsApp
+    </a>
+
+    <a class="botao catalogo"
+       href="https://wa.me/244935492155?text=Olá!%20Quero%20ver%20o%20catálogo%20da%20Beleza%20Éden."
+       target="_blank">
+      🛍️ Ver Catálogo
+    </a>
+
+    <!-- SUBSTITUA OS LINKS ABAIXO PELOS SEUS PERFIS -->
+    <a class="botao tiktok"
+       href="https://www.tiktok.com/"
+       target="_blank">
+      🎵 TikTok
+    </a>
+
+    <a class="botao instagram"
+       href="https://www.instagram.com/"
+       target="_blank">
+      📸 Instagram
+    </a>
+
+    <a class="botao localizacao"
+       href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Capango+Catemo+Angola"
+       target="_blank">
+      📍 Nossa localização
+    </a>
+
+  </section>
+
+  <section class="produtos">
+
+    <h2>✨ Nossos produtos</h2>
+
+    <div class="lista">
+
+      <div class="produto">💄 Batons</div>
+      <div class="produto">🧴 Cremes</div>
+      <div class="produto">✨ Óleo facial</div>
+      <div class="produto">💇 Óleo de cabelo</div>
+      <div class="produto">💆 Gel para cabelo</div>
+      <div class="produto">🌸 Produtos para pele</div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p><strong>Beleza Éden</strong></p>
+    <p>Sua beleza começa aqui.</p>
+    <p>Catemo • Rua Joaquim Capango</p>
+    <p>© 2026 Beleza Éden</p>
+  </footer>
+
+</body>
+  </html>
